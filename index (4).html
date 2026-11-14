@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="מרכז שיתוף דפי HTML - דשבורדים, חומרי לימוד ופרויקטים אינטראקטיביים.">
+  <title>HTML SHARE | מרכז הפרויקטים</title>
+  <style>
+    :root {font-family:Arial, 'Segoe UI', sans-serif; color-scheme:dark; --bg:#0a1020;--panel:#172139;--line:#31405c;--text:#eff6ff;--muted:#b7c8de;--accent:#74e5cd}
+    * {box-sizing:border-box}
+    body {margin:0;min-height:100vh;color:var(--text);background:radial-gradient(circle at 14% 12%,#1a4560 0,transparent 35%),radial-gradient(circle at 90% 72%,#243058 0,transparent 42%),var(--bg)}
+    .wrap {max-width:1050px;margin:auto;padding:30px 24px 50px}
+    header {display:flex;align-items:center;justify-content:space-between;gap:15px}
+    .brand {display:flex;align-items:center;gap:12px;font-size:22px;font-weight:800;direction:ltr}
+    .logo {width:43px;height:43px;border-radius:14px;background:linear-gradient(135deg,#65e3c8,#68a4ed);display:grid;place-items:center;color:#0c1930;font-weight:900;font-size:17px}
+    .status {font-size:13px;border:1px solid #466b76;color:#9fe9d7;border-radius:30px;padding:9px 13px}
+    main {padding:95px 0 35px}
+    .eyebrow {font-size:14px;font-weight:700;letter-spacing:.5px;color:var(--accent)}
+    h1 {font-size:clamp(36px,6vw,67px);letter-spacing:-1.4px;line-height:1.15;margin:16px 0 22px}
+    .lead {font-size:clamp(17px,2vw,20px);line-height:1.9;color:var(--muted);max-width:720px}
+    .pill {display:inline-flex;margin-top:24px;border:1px solid var(--line);border-radius:12px;padding:12px 16px;color:#c8d8ea;background:#18253b}
+    h2 {font-size:24px;margin:55px 0 20px}
+    .grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .card {border:1px solid var(--line);border-radius:20px;padding:25px;background:linear-gradient(145deg,#1b2a43,#131d31);min-height:190px}
+    .icon {font-size:31px}.card h3 {font-size:21px;margin:17px 0 8px}.card p {font-size:15px;line-height:1.7;color:var(--muted);margin:0}
+    footer {border-top:1px solid var(--line);padding-top:24px;margin-top:65px;color:#93abc7;font-size:14px;display:flex;gap:10px;justify-content:space-between;flex-wrap:wrap}
+    footer a {color:#91deff}
+    @media(max-width:700px){.wrap{padding:22px 17px 35px}main{padding-top:62px}.grid{grid-template-columns:1fr}.card{min-height:0}.status{font-size:11px}footer{margin-top:45px}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><span class="logo">&lt;/&gt;</span><span>HTML SHARE</span></div>
+    <div class="status">פתוח לצפייה ולשיתוף</div>
+  </header>
+  <main>
+    <div class="eyebrow">מרכז הפרויקטים הדיגיטליים</div>
+    <h1>פרויקטים מעניינים.<br>קישור אחד לשיתוף.</h1>
+    <p class="lead">ברוכים הבאים למרכז שיתוף דפי ה־HTML. כאן יתפרסמו בהמשך דשבורדים, חומרי לימוד ופרויקטים אינטראקטיביים — כולם נגישים מכל דפדפן, גם ללא חשבון ChatGPT.</p>
+    <div class="pill">✨ דף הבית מוכן · הפרויקטים יתווספו בהמשך</div>
+    <h2>מה יהיה כאן?</h2>
+    <section class="grid" aria-label="קטגוריות פרויקטים">
+      <article class="card"><div class="icon" aria-hidden="true">📊</div><h3>דשבורדים</h3><p>הצגת מידע, נתונים, מדדים ותרשימים בצורה ברורה ואינטראקטיבית.</p></article>
+      <article class="card"><div class="icon" aria-hidden="true">📚</div><h3>חומרי לימוד</h3><p>סיכומים, מדריכים ודפי עזר נוחים לקריאה ולשיתוף.</p></article>
+      <article class="card"><div class="icon" aria-hidden="true">🎬</div><h3>יצירה ובינה מלאכותית</h3><p>ניסויים, פרויקטים יצירתיים וכלים מבוססי HTML.</p></article>
+    </section>
+  </main>
+  <footer><span>© HTML SHARE · מרכז שיתוף הפרויקטים</span><span>מאוחסן באמצעות <a href="https://pages.github.com/" rel="noopener noreferrer">GitHub Pages</a> לאחר הפעלת הפרסום</span></footer>
+</div>
+</body>
+</html>
