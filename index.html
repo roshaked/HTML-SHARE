@@ -24,9 +24,19 @@
     .grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
     .card {border:1px solid var(--line);border-radius:20px;padding:25px;background:linear-gradient(145deg,#1b2a43,#131d31);min-height:190px}
     .icon {font-size:31px}.card h3 {font-size:21px;margin:17px 0 8px}.card p {font-size:15px;line-height:1.7;color:var(--muted);margin:0}
+    .featured {border:1px solid #5b9c95;border-radius:24px;padding:32px;background:linear-gradient(115deg,#194e52,#173449 65%,#19263d);display:flex;align-items:center;justify-content:space-between;gap:30px}
+    .featured .tag {font-size:13px;font-weight:800;color:#a8eddb;letter-spacing:.05em}
+    .featured h2 {font-size:clamp(27px,4vw,39px);margin:10px 0 12px}
+    .featured p {max-width:590px;margin:0;color:#d3e5e4;line-height:1.7}
+    .project-links {display:flex;gap:10px;flex-wrap:wrap;margin-top:21px}
+    .project-links a {display:inline-block;text-decoration:none;background:#d9f4e7;color:#11363a;font-weight:800;border-radius:100px;padding:11px 18px}
+    .project-links a.secondary {background:transparent;color:#e4f4f4;border:1px solid #96c4c0}
+    .project-links a:hover {filter:brightness(1.1)}
+    .project-links a:focus-visible {outline:3px solid #fff;outline-offset:3px}
+    .featured-mark {font-size:95px;line-height:1;color:#9fd5cd;opacity:.7;flex:none}
     footer {border-top:1px solid var(--line);padding-top:24px;margin-top:65px;color:#93abc7;font-size:14px;display:flex;gap:10px;justify-content:space-between;flex-wrap:wrap}
     footer a {color:#91deff}
-    @media(max-width:700px){.wrap{padding:22px 17px 35px}main{padding-top:62px}.grid{grid-template-columns:1fr}.card{min-height:0}.status{font-size:11px}footer{margin-top:45px}}
+    @media(max-width:700px){.wrap{padding:22px 17px 35px}main{padding-top:62px}.grid{grid-template-columns:1fr}.card{min-height:0}.featured{padding:25px}.featured-mark{display:none}.status{font-size:11px}footer{margin-top:45px}}
   </style>
 </head>
 <body>
@@ -38,9 +48,22 @@
   <main>
     <div class="eyebrow">מרכז הפרויקטים הדיגיטליים</div>
     <h1>פרויקטים מעניינים.<br>קישור אחד לשיתוף.</h1>
-    <p class="lead">ברוכים הבאים למרכז שיתוף דפי ה־HTML. כאן יתפרסמו בהמשך דשבורדים, חומרי לימוד ופרויקטים אינטראקטיביים — כולם נגישים מכל דפדפן, גם ללא חשבון ChatGPT.</p>
-    <div class="pill">✨ דף הבית מוכן · הפרויקטים יתווספו בהמשך</div>
-    <h2>מה יהיה כאן?</h2>
+    <p class="lead">ברוכים הבאים למרכז שיתוף דפי ה־HTML. כאן תוכלו לפתוח דפי HTML, חומרי לימוד ופרויקטים אינטראקטיביים — כולם נגישים מכל דפדפן, גם ללא חשבון ChatGPT.</p>
+    <div class="pill">✨ פרויקט חדש: בוקר ריבר</div>
+    <h2>פרויקטים לצפייה</h2>
+    <section class="featured" aria-labelledby="river-title">
+      <div>
+        <span class="tag">קמפיין שיווקי · דף נחיתה</span>
+        <h2 id="river-title">בוקר ריבר: יש בקרים שכדאי להאריך</h2>
+        <p>הצעה יצירתית לתפריט בוקר באמצע השבוע לבני ובנות 50 ומעלה: מנות מיוחדות, מחיר זוגי מוצע ורגע שקט על שפת הירדן. הגרסה האינטראקטיבית מאפשרת להרכיב בוקר לשניים.</p>
+        <div class="project-links">
+          <a href="cafe-river-morning/interactive.html">פתיחת הגרסה האינטראקטיבית ←</a>
+          <a class="secondary" href="cafe-river-morning/index.html">פתיחת דף הנחיתה</a>
+        </div>
+      </div>
+      <div class="featured-mark" aria-hidden="true">≈</div>
+    </section>
+    <h2>עוד תחומים</h2>
     <section class="grid" aria-label="קטגוריות פרויקטים">
       <article class="card"><div class="icon" aria-hidden="true">📊</div><h3>דשבורדים</h3><p>הצגת מידע, נתונים, מדדים ותרשימים בצורה ברורה ואינטראקטיבית.</p></article>
       <article class="card"><div class="icon" aria-hidden="true">📚</div><h3>חומרי לימוד</h3><p>סיכומים, מדריכים ודפי עזר נוחים לקריאה ולשיתוף.</p></article>
