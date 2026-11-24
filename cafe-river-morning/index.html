@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183f43">
+  <meta name="description" content="בוקר ריבר — הצעת קמפיין לתפריט בוקר מיוחד באמצע השבוע לבני ובנות 50 ומעלה, על שפת הירדן.">
+  <title>בוקר ריבר | הזמן לנהר, הזמן לעצמכם</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&family=Frank+Ruhl+Libre:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#183f43;--deep:#113036;--teal:#326a68;--paper:#f8f5ed;--cream:#ede7d8;--orange:#bc6c46;--line:#d3d7ce;--white:#fffdf8}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Assistant,Arial,sans-serif;font-size:19px;line-height:1.55}
+    a{color:inherit}
+    a:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
+    .wrap{width:min(1180px,calc(100% - 48px));margin:auto}
+    .top{background:var(--deep);color:#fff;padding:13px 0;font-size:15px;text-align:center;letter-spacing:.02em}
+    .top strong{color:#efc9a9}
+    header{position:relative;z-index:2;background:var(--paper)}
+    .nav{height:86px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{text-decoration:none;display:flex;align-items:center;gap:12px;font-family:"Frank Ruhl Libre",serif;font-size:29px;font-weight:700;white-space:nowrap}
+    .brand-icon{height:39px;width:39px;border:1.5px solid var(--teal);border-radius:50%;display:grid;place-items:center;font-size:24px;line-height:1}
+    .nav-links{display:flex;align-items:center;gap:28px;font-size:16px;font-weight:700}
+    .nav-links a{text-decoration:none}
+    .nav-links a:hover{text-decoration:underline;text-underline-offset:5px}
+    .nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--orange);color:white;text-decoration:none;border:0;border-radius:100px;padding:13px 23px;font-family:inherit;font-size:18px;font-weight:800;transition:transform .2s,background .2s;cursor:pointer}
+    .nav-cta{font-size:16px;padding:10px 21px}
+    .button:hover,.nav-cta:hover{background:#a65532;transform:translateY(-2px)}
+    .hero{overflow:hidden;position:relative;background:var(--deep);color:var(--white);min-height:650px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+    .hero-copy{padding:96px max(36px,calc((100vw - 1180px)/2)) 80px 42px;position:relative;z-index:1;align-self:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:#e9c2a2;font-weight:800;font-size:16px;letter-spacing:.045em}
+    .eyebrow:before{content:"";display:block;width:29px;height:1px;background:currentColor}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,h3{font-family:"Frank Ruhl Libre",Georgia,serif;line-height:1.07}
+    h1{font-size:clamp(58px,6.2vw,100px);font-weight:500;letter-spacing:-.045em;margin:22px 0 24px}
+    h1 em{font-style:normal;color:#dfaa82}
+    .hero-copy>p{font-size:clamp(20px,2vw,26px);max-width:540px;line-height:1.4;margin-bottom:34px}
+    .hero-note{font-size:16px;color:#cbdad5;margin-top:19px}
+    .hero-art{position:relative;min-height:650px;overflow:hidden;background:#739e9d}
+    .hero-art svg{display:block;position:absolute;width:100%;height:100%;inset:0;object-fit:cover}
+    .art-label{position:absolute;left:30px;bottom:27px;background:rgba(248,245,237,.91);color:var(--ink);padding:10px 18px;border-radius:3px;font-size:15px;font-weight:700;box-shadow:0 8px 30px #092b3250}
+    .mini-strip{background:#e7e1d3;border-bottom:1px solid #d6d0c2}
+    .mini-strip .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:74px;font-size:17px;font-weight:700}
+    .mini-strip span{display:flex;align-items:center;gap:9px}
+    .mini-strip b{font-size:21px;color:var(--orange)}
+    section{padding:110px 0}
+    .section-intro{max-width:740px;margin-bottom:42px}
+    .kicker{font-size:16px;color:var(--orange);letter-spacing:.07em;font-weight:800;margin-bottom:12px}
+    h2{font-size:clamp(43px,4.6vw,68px);font-weight:500;letter-spacing:-.028em;margin-bottom:20px}
+    .section-intro p{font-size:22px;line-height:1.55;color:#456064}
+    .offer{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
+    .dish{background:var(--white);border:1px solid #e0dfd6;padding:34px 30px 30px;min-height:315px;display:flex;flex-direction:column;box-shadow:0 17px 44px #173c4210}
+    .dish-number{color:var(--orange);font-size:16px;font-weight:800;letter-spacing:.1em;margin-bottom:48px}
+    .dish h3{font-size:34px;font-weight:600;margin-bottom:13px}
+    .dish p{font-size:18px;color:#52666a;margin:0}
+    .dish svg{align-self:flex-end;margin-top:auto;width:53px;height:53px}
+    .price-box{margin-top:28px;border:1px solid var(--teal);background:#e6eeeb;padding:27px 31px;display:flex;justify-content:space-between;align-items:center;gap:30px}
+    .price-box h3{font-size:30px;margin:0 0 3px}
+    .price-box p{font-size:17px;margin:0}
+    .price{white-space:nowrap;font-family:"Frank Ruhl Libre",serif;font-size:50px;line-height:1;color:var(--deep)}
+    .price small{display:block;font:700 15px Assistant,sans-serif;text-align:center;margin-top:8px}
+    .disclaimer{font-size:15px;color:#5f6967;margin-top:15px}
+    .pause{background:#dbe8e3;padding:0;overflow:hidden}
+    .pause-grid{display:grid;grid-template-columns:1fr 1fr;min-height:570px}
+    .pause-visual{position:relative;background:linear-gradient(155deg,#98b7ad 0%,#c5d4bd 43%,#5b9999 44%,#326b76 75%,#265666 100%);overflow:hidden}
+    .pause-visual:before,.pause-visual:after{content:"";position:absolute;border:2px solid #ffffff80;border-radius:50%;width:360px;height:90px;transform:rotate(-14deg);left:12%;bottom:17%}
+    .pause-visual:after{width:500px;height:120px;left:-6%;bottom:6%;opacity:.55}
+    .sun{position:absolute;top:13%;right:19%;width:125px;height:125px;border-radius:50%;background:#f5d6a8;box-shadow:0 0 0 26px #f5d6a830}
+    .pause-visual .quote{position:absolute;right:10%;bottom:11%;max-width:430px;color:white;font-family:"Frank Ruhl Libre",serif;font-size:clamp(35px,4.2vw,60px);line-height:1.08;text-shadow:0 3px 15px #17464b70}
+    .pause-copy{padding:88px 72px;align-self:center}
+    .pause-copy p{max-width:470px;font-size:22px;color:#405e60}
+    .pause-copy ul{list-style:none;padding:0;margin:32px 0 0}
+    .pause-copy li{border-top:1px solid #b8d0c6;padding:14px 0;font-size:19px;font-weight:700}
+    .pause-copy li:before{content:"✦";color:var(--orange);margin-left:12px}
+    .details{background:var(--deep);color:white;text-align:center}
+    .details .kicker{color:#e7b890}
+    .details h2{max-width:800px;margin:0 auto 20px}
+    .details p{color:#d8e4de;font-size:21px;max-width:710px;margin:0 auto 30px}
+    .details .button{margin-bottom:31px}
+    .details-line{display:flex;justify-content:center;flex-wrap:wrap;gap:18px 32px;color:#c5d8d1;font-size:17px}
+    footer{background:#102b30;color:#c6d6d0;padding:29px 0;font-size:15px}
+    footer .wrap{display:flex;justify-content:space-between;gap:20px;align-items:center}
+    footer a{color:white}
+    @media(max-width:850px){.nav{height:72px}.nav-links{gap:15px}.nav-links a:not(.nav-cta){display:none}.hero{grid-template-columns:1fr}.hero-copy{padding:75px 32px 55px}.hero-art{min-height:360px}.hero-art svg{height:100%}.mini-strip .wrap{flex-wrap:wrap;justify-content:center;padding:16px 0;gap:7px 30px}.offer{grid-template-columns:1fr 1fr}.pause-grid{grid-template-columns:1fr}.pause-visual{min-height:350px}.pause-copy{padding:65px 40px}}
+    @media(max-width:600px){body{font-size:18px}.wrap{width:min(100% - 32px,1180px)}.top{font-size:13px}.brand{font-size:23px}.brand-icon{height:34px;width:34px}.nav-cta{font-size:14px;padding:9px 14px}.hero-copy{padding:58px 22px 54px}.hero{min-height:0}.hero-art{min-height:310px}.art-label{left:15px;bottom:15px;font-size:12px}.mini-strip .wrap{font-size:14px;justify-content:flex-start}.mini-strip b{font-size:16px}section{padding:75px 0}.section-intro p{font-size:19px}.offer{grid-template-columns:1fr}.dish{min-height:240px;padding:25px}.dish-number{margin-bottom:30px}.price-box{padding:23px;align-items:flex-start}.price-box h3{font-size:26px}.price{font-size:39px}.pause-copy{padding:66px 26px}.pause-copy p{font-size:19px}.details p{font-size:19px}footer .wrap{flex-direction:column;align-items:flex-start}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.nav-cta{transition:none}}
+  </style>
+</head>
+<body>
+  <div class="top"><strong>הצעת קמפיין לימודית</strong> · בוקר חדש לקפה ריבר, במיוחד לאמצע השבוע</div>
+  <header>
+    <nav class="nav wrap" aria-label="ניווט ראשי">
+      <a class="brand" href="#home" aria-label="בוקר ריבר, חזרה לראש הדף"><span class="brand-icon" aria-hidden="true">≈</span> בוקר ריבר</a>
+      <div class="nav-links"><a href="#menu">הבוקר שלנו</a><a href="#feeling">למה דווקא כאן</a><a class="nav-cta" href="#visit">בואו לבוקר רגוע ←</a></div>
+    </nav>
+  </header>
+  <main>
+    <div class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">ראשון–חמישי בבוקר · לגילאי 50 ומעלה</span>
+        <h1>יש בקרים<br>שכדאי <em>להאריך.</em></h1>
+        <p>מנות בוקר מיוחדות שאפשר למצוא רק באמצע השבוע. שולחן נעים, קפה טוב, והירדן שזורם בקצב שלו.</p>
+        <a class="button" href="#menu">גלו את הבוקר שלנו <span aria-hidden="true">↙</span></a>
+        <div class="hero-note">בוקר מפנק, בלי למהר ובלי הפתעות במחיר.</div>
+      </div>
+      <div class="hero-art" role="img" aria-label="איור של שולחן ארוחת בוקר לצד נהר הירדן">
+        <svg viewBox="0 0 750 750" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#d6ddd0"/><stop offset="1" stop-color="#a6c0ad"/></linearGradient><linearGradient id="river" x2="0" y2="1"><stop stop-color="#9bc5be"/><stop offset="1" stop-color="#356c78"/></linearGradient><filter id="shadow"><feGaussianBlur stdDeviation="13"/></filter></defs>
+          <rect width="750" height="750" fill="url(#sky)"/>
+          <circle cx="130" cy="105" r="75" fill="#f5dbb5" opacity=".9"/>
+          <path d="M0 245 Q130 186 264 222 T548 205 T750 180V425H0Z" fill="#819f81"/>
+          <path d="M0 290 Q165 233 340 271 T750 250V420H0Z" fill="#618e82"/>
+          <path d="M-50 420 Q180 310 432 370 T800 310V750H-50Z" fill="url(#river)"/>
+          <path d="M-20 493 Q154 425 336 454 M310 540 Q500 486 795 495 M-50 659 Q205 576 432 625 M508 403 Q608 380 735 391" fill="none" stroke="#e2ece0" stroke-width="7" opacity=".52" stroke-linecap="round"/>
+          <path d="M-40 640 Q104 598 265 620 T800 560V750H-40Z" fill="#315e59" opacity=".5"/>
+          <ellipse cx="395" cy="662" rx="365" ry="78" fill="#173f40" opacity=".37" filter="url(#shadow)"/>
+          <path d="M-20 522 Q286 478 766 552 L830 815H-35Z" fill="#e8d6b7"/>
+          <path d="M-20 522 Q286 478 766 552" fill="none" stroke="#f6ead1" stroke-width="15"/>
+          <path d="M50 554 Q383 531 748 610 M30 620 Q377 594 760 675 M55 697 Q384 675 765 736" stroke="#d0b58c" opacity=".25" stroke-width="5" fill="none"/>
+          <ellipse cx="436" cy="591" rx="176" ry="91" fill="#806e5b" opacity=".26"/>
+          <ellipse cx="429" cy="566" rx="179" ry="91" fill="#f7f0e2"/><ellipse cx="429" cy="566" rx="151" ry="67" fill="#e4d6bc"/>
+          <path d="M330 575 Q341 530 377 530 Q394 497 435 518 Q466 494 488 528 Q519 537 524 567 Q512 596 479 602 Q435 610 411 596 Q358 610 330 575Z" fill="#b9703f" stroke="#8d4d2d" stroke-width="5"/>
+          <path d="M343 563 Q378 574 405 544 M414 587 Q452 563 463 523 M467 583 Q502 562 505 547" fill="none" stroke="#e7aa69" stroke-width="9" stroke-linecap="round"/>
+          <ellipse cx="167" cy="611" rx="102" ry="60" fill="#a0a69a" opacity=".3"/><ellipse cx="168" cy="591" rx="105" ry="59" fill="#fbf7ee"/><ellipse cx="168" cy="591" rx="80" ry="39" fill="#d8e1ce"/>
+          <path d="M110 589 Q142 551 174 581 Q203 551 226 587 Q179 636 110 589Z" fill="#5c8063"/><circle cx="157" cy="574" r="13" fill="#bf6245"/><circle cx="190" cy="594" r="12" fill="#c77450"/><path d="M123 598 Q179 561 212 602" stroke="#d7db9b" stroke-width="8" fill="none"/>
+          <ellipse cx="622" cy="543" rx="78" ry="35" fill="#173f40" opacity=".26"/><ellipse cx="622" cy="517" rx="77" ry="37" fill="#eee9dc"/><ellipse cx="622" cy="511" rx="56" ry="24" fill="#875436"/><path d="M685 498 Q744 480 715 539 Q698 551 678 529" fill="none" stroke="#eee9dc" stroke-width="15"/>
+          <path d="M63 366 Q88 236 107 126 M89 264 Q35 207 8 164 M99 221 Q159 182 175 147" stroke="#315e4e" stroke-width="14" fill="none" stroke-linecap="round"/>
+          <path d="M79 311 Q34 292 22 251 M100 225 Q136 219 169 206 M105 163 Q69 146 42 119" stroke="#4e795b" stroke-width="8" fill="none"/>
+        </svg>
+        <span class="art-label">המחשה אמנותית · קפה, מאפה ונהר</span>
+      </div>
+    </div>
+    <div class="mini-strip"><div class="wrap"><span><b>✦</b> רק בבוקר של אמצע השבוע</span><span><b>✦</b> מנות חדשות בהשראת הבייקרי</span><span><b>✦</b> רגע שקט על שפת הירדן</span></div></div>
+    <section id="menu" aria-labelledby="menu-title">
+      <div class="wrap">
+        <div class="section-intro"><div class="kicker">משהו מיוחד לחכות לו</div><h2 id="menu-title">תפריט שאומר:<br>הבוקר הזה שלכם.</h2><p>שלוש הצעות למנות בוקר שמרגישות קצת כמו חופשה קטנה — ומיועדות רק לבוקר של אמצע השבוע.</p></div>
+        <div class="offer">
+          <article class="dish"><span class="dish-number">01 / מלוח</span><h3>קרואסון ירדן</h3><p>קרואסון חמאה חם עם גבינות מקומיות, עלים רעננים וירקות העונה.</p><svg viewBox="0 0 60 60" aria-hidden="true"><path d="M8 34q6-18 19-18l-5 16q7-7 16-8l-2 17q9-4 16-13-2 21-23 24Q13 51 8 34Z" fill="#d08b58" stroke="#a8623d" stroke-width="2"/></svg></article>
+          <article class="dish"><span class="dish-number">02 / טרי</span><h3>צלחת של בוקר</h3><p>לחם מחמצת שנאפה במקום, סלט קטן, ממרחים עונתיים וביצה לבחירה.</p><svg viewBox="0 0 60 60" aria-hidden="true"><ellipse cx="30" cy="30" rx="25" ry="19" fill="#dce6d4" stroke="#6f927e" stroke-width="2"/><circle cx="30" cy="30" r="10" fill="#edb65c"/><path d="M7 30q9-12 18-8M40 20q11 8 10 18" fill="none" stroke="#6f927e" stroke-width="4"/></svg></article>
+          <article class="dish"><span class="dish-number">03 / מתוק</span><h3>סיום מתוק ליד המים</h3><p>מאפה אישי משתנה מהוויטרינה, לצד קפה שמזמין עוד כמה דקות של שיחה.</p><svg viewBox="0 0 60 60" aria-hidden="true"><path d="M10 19h38v20q-2 12-19 12T10 39Z" fill="#f0e8d7" stroke="#66827a" stroke-width="2"/><path d="M48 24q16-3 8 13-3 5-10 4" fill="none" stroke="#66827a" stroke-width="4"/><path d="M17 20q13-10 26 0" fill="#a36b48"/></svg></article>
+        </div>
+        <div class="price-box"><div><h3>מתפנקים, ויודעים מראש.</h3><p>הצעת הקמפיין: ארוחת בוקר זוגית ממנות התפריט המיוחד, עם שני משקאות חמים.</p></div><div class="price">149 ₪<small>מחיר מוצע לזוג</small></div></div>
+        <p class="disclaimer">* זהו דף קונספט לתרגיל שיווקי. המנות, הזמינות, תנאי המבצע והמחיר המוצע אינם הצעה פעילה של קפה ריבר וכפופים לאישור העסק.</p>
+      </div>
+    </section>
+    <section class="pause" id="feeling" aria-labelledby="feeling-title"><div class="pause-grid"><div class="pause-copy"><div class="kicker">יותר מארוחת בוקר</div><h2 id="feeling-title">כשהנהר זורם,<br>אפשר להאט.</h2><p>יש ימים שבהם כל מה שצריך הוא מקום נעים לשבת בו יחד, לדבר בלי להסתכל על השעון ולתת לבוקר להימשך.</p><ul><li>ישיבה בפנים או בחוץ מול הנוף</li><li>מאפים שנאפים במקום מדי בוקר</li><li>זמן טוב לעצמכם, באמצע השבוע</li></ul></div><div class="pause-visual" role="img" aria-label="איור מופשט של שמש ומים זורמים"><div class="sun"></div><div class="quote">הפינוק הוא לא רק בצלחת.<br>הוא גם ברגע.</div></div></div></section>
+    <section class="details" id="visit" aria-labelledby="visit-title"><div class="wrap"><div class="kicker">נתראה על שפת הירדן</div><h2 id="visit-title">בוקר טוב מתחיל<br>במקום הנכון.</h2><p>קפה ריבר נמצא במתחם ירדנית, בכניסה לקיבוץ כנרת. רוצים להכיר את המקום ולברר מה מוגש בפועל? עברו לאתר הרשמי.</p><a class="button" href="https://www.caferiver.co.il/" target="_blank" rel="noopener noreferrer">לאתר הרשמי של קפה ריבר <span aria-hidden="true">↗</span></a><div class="details-line"><span>מתחם ירדנית · בכניסה לקיבוץ כנרת</span><span>שעות פעילות האתר הרשמי: 08:00–16:00, ראשון–שבת או עד גמר המלאי</span><span>079-695-4422</span></div></div></section>
+  </main>
+  <footer><div class="wrap"><span>בוקר ריבר · קונספט לימודי לקורס שיווק במדיה דיגיטלית</span><span>הפרטים העובדתיים על העסק לפי <a href="https://www.caferiver.co.il/" target="_blank" rel="noopener noreferrer">האתר הרשמי</a> · התפריט והמחיר הם הצעה בלבד</span></div></footer>
+</body>
+</html>
+
